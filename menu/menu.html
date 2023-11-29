@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Shop - Menu</title> 
+</head>
+<body>
+    <header>
+        <nav>
+            <!--using nav helps us mark up semantically-->
+            <ul class="main_nav">
+                <li><a href="../index.html">Home</a></li>
+                 <li><a href="../about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+     <img src="../images/coffee_shop.jpg" alt="The Coffee Shop" width="500">
+    <!--1 basic table structure - table element, tr/th/td, captions-->
+    <h1>Specials</h1>
+    <table>
+        <caption>Soup Specials for the Week</caption>
+        <tr>
+            <th>Soup Specials</th>
+            <th>Day of the Week</th>
+            <th>Price (cup/bowl)</th>
+        </tr>
+        <tr>
+            <td>Chicken and Dumpling</td>
+            <td>Sunday</td>
+            <td>$5/$8</td>
+        </tr>
+        <tr>
+            <td>Avgolemono</td>
+            <td>Monday</td>
+            <td>$6/$9</td>
+        </tr>
+        <tr>
+            <td>Wonton</td>
+            <td>Tuesday</td>
+            <td>$5/$8</td>
+        </tr>
+        <tr>
+            <td>Cheese and Broccoli</td>
+            <td>Wednesday</td>
+            <td>$4/$7</td>
+        </tr>
+        <tr>
+            <td>Tortilla</td>
+            <td>Thursday</td>
+            <td>$5/$8</td>
+        </tr>
+        <tr>
+            <td>Chicken Noodle</td>
+            <td>Friday</td>
+            <td>$6/$9</td>
+        </tr>
+        <tr>
+            <td>Vegetable</td>
+            <td>Saturday</td>
+            <td>$4/$7</td>
+        </tr>
+    </table>  
+
+<!--2 th - notice you used it bc it is bold-->
+<h1>Specials</h1>
+<table>
+    <caption>Soup Specials for the Week</caption>
+    <tr>
+        <th>Soup Specials</th>
+        <th>Day of the Week</th>
+        <th>Price (cup/bowl)</th>
+    </tr>
+    <tr>
+        <th>Chicken and Dumpling</th>
+        <th>Sunday</th>
+        <th>$5/$8</th>
+    </tr>
+    <tr>
+        <th>Avgolemono</th>
+        <th>Monday</th>
+        <th>$6/$9</th>
+    </tr>
+</table>  
+
+<!--3 add style to head - to start seeing what we are doing
+ <style>
+    td, th {
+    border: 1px solid gray;
+    }
+ </style>  
+-->
+
+
+
+<!--more complex tables -->
+<!--4 spanning columns and rows -->
+
+<h1>Specials</h1>
+<table>
+    <caption>Soup Specials for the Week</caption>
+    <tr>
+        <th colspan="2">Soup Specials</th>
+        <th>Price (cup/bowl)</th>
+    </tr>
+    <tr>
+        <td>Chicken and Dumpling</td>
+        <td>Sunday</td>
+        <td>$5/$8</td>
+    </tr>
+    <tr>
+        <td>Avgolemono</td>
+        <td>Monday</td>
+        <td>$6/$9</td>
+    </tr>
+    <tr>
+        <td>Wonton</td>
+        <td>Tuesday</td>
+        <td>$5/$8</td>
+    </tr>
+    <tr>
+        <td>Cheese and Broccoli</td>
+        <td>Wednesday</td>
+        <td>$4/$7</td>
+    </tr>
+    <tr>
+        <td>Tortilla</td>
+        <td>Thursday</td>
+        <td>$5/$8</td>
+    </tr>
+    <tr>
+        <td>Chicken Noodle</td>
+        <td>Friday</td>
+        <td>$6/$9</td>
+    </tr>
+    <tr>
+        <td>Vegetable</td>
+        <td>Saturday</td>
+        <td>$4/$7</td>
+    </tr>
+</table>  
+<br>
+<br>
+<table>
+    <caption>Soup Specials for the Week</caption>
+    <tr>
+        <th rowspan="4">Soup Sizes</th>
+        <td>Cup</td>
+    </tr>
+    <tr>
+        <td>Bowl</td>
+    </tr>
+    <tr>
+        <td>Soup for two</td>
+    </tr>
+    <tr>
+        <td>Soup for family</td>
+    </tr>
+</table>
+
+
+<!--5  scopes -->
+        <h1>Specials</h1>
+            <table>
+                <caption>Soup Specials for the Week</caption>
+                <tr>
+                    <th scope="col" style="background-color: green;">Soup Specials</th>
+                    <th scope="col">Day of the Week</th>
+                    <th scope="col">Price (cup/bowl)</th>
+                </tr>
+                <tr>
+                    <td>Chicken and Dumpling</td>
+                    <td>Sunday</td>
+                    <td>$5/$8</td>
+                </tr>
+                <tr>
+                    <td>Avgolemono</td>
+                    <td>Monday</td>
+                    <td>$6/$9</td>
+                </tr>
+                <tr>
+                    <td>Wonton</td>
+                    <td>Tuesday</td>
+                    <td>$5/$8</td>
+                </tr>
+                <tr>
+                    <td>Cheese and Broccoli</td>
+                    <td>Wednesday</td>
+                    <td>$4/$7</td>
+                </tr>
+                <tr>
+                    <td>Tortilla</td>
+                    <td>Thursday</td>
+                    <td>$5/$8</td>
+                </tr>
+                <tr>
+                    <td>Chicken Noodle</td>
+                    <td>Friday</td>
+                    <td>$6/$9</td>
+                </tr>
+                <tr>
+                    <td>Vegetable</td>
+                    <td>Saturday</td>
+                    <td>$4/$7</td>
+                </tr>
+            </table>  
+ 
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <th scope="row">Soup Sizes</th>
+                    <td>Cup</td>
+                    <td>Bowl</td>
+                    <td>Soup for two</td>
+                    <td>Soup for family</td>
+                </tr>
+            </table>
+
+   <footer>
+         <!--footer content - be sure to include across all pages - fake business note 
+            and copyright and name-->
+        <p><small>This is a fictitious business; this website is for learning purposes only. 
+            All content copyright &copy; 2022, The Coffee Shop.</small></p>
+     </footer>
+
+</body>
+</html>
